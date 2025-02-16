@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Orbit", serif; /* 전체 페이지의 폰트 스타일 지정 */
+    margin: 0;
+    padding: 0;
+    background-color: #d6e6f5; /* 배경색 설정 */
+    text-align: center; /* 제목을 중앙 정렬 */
+    box-sizing: border-box;
+}
+
+.btn {
+    font-family: "Orbit", serif;
+    font-size: 25px;
+    padding: 15px 30px;
+    border: 3px solid #3c3e70;
+    background-color : transparent;
+    color: #3c3e70;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.btn:focus {
+    outline : none;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #3c3e70;
+    top: 100%;
+    left: 0;
+    transition: all 0.4s;
+    z-index: -5;
+}
+
+.btn:hover::before {
+    transform: translateY(-100%);
+}
+
+.btn:hover {
+    color:#d6e6f5;
+}
+
+h1 {
+    color: #333; /* 제목의 색상 지정 */
+    text-align: center; /* 제목을 중앙 정렬 */
+}
+
+h2 {
+    color: #07289f; /* 제목의 색상 지정 */
+    text-align: center; /* 제목을 중앙 정렬 */
+}
+
+h3 {
+    color: #2d0369; /* 제목의 색상 지정 */
+    text-align: center; /* 제목을 중앙 정렬 */
+}
+
+p {
+    font-size: 16px; /* 문단의 폰트 크기 지정 */
+    color: #666; /* 문단의 색상 지정 */
+    line-height: 1.2; /* 문단의 줄 간격 지정 */
+    margin: 10px; /* 문단 주위 여백 지정 */
+    text-align: center; /* 제목을 중앙 정렬 */
+}
+
+a {
+    color: #000; /* 링크의 색상 지정 */
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    text-align: center; /* 제목을 중앙 정렬 */
+}
+
+a:hover {
+    color: blue; /* 마우스 오버 시 링크 색상 변경 */
+    text-align: center; /* 제목을 중앙 정렬 */
+}
+
+ul {
+    list-style: none; /* 목록의 스타일 없애기 */
+    padding: 0;
+    text-align: left; /* 제목을 중앙 정렬 */
+}
+
+li {
+    background-color: #fff; /* 목록 항목 배경색 지정 */
+    margin-bottom: 5px; /* 목록 항목 사이의 여백 지정 */
+    padding: 5px; /* 목록 항목 내부 여백 지정 */
+    border: 1px solid #ddd; /* 목록 항목 테두리 지정 */
+    text-align: left; /* 제목을 중앙 정렬 */
+}
+
+img {
+  border: 4px solid #3c3e70;
+  border-radius: 4px;
+  padding: 5px;
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+div {
+    margin: 0px; /* div 주위 여백 지정 */
+    padding: 0px; /* div 내부 여백 지정 */
+    background-color: yellow; /* 배경색 지정 */
+    border: 1px solid #ddd; /* 테두리 지정 */
+    text-align: center; /* 제목을 중앙 정렬 */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: #3c3e70; /* 투명도 추가 가능 */
+    z-index: 5; /* 다른 요소들보다 위 */
+}
+
+.overlay2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: #3c3e70; /* 투명도 추가 가능 */
+    z-index: 5; /* 다른 요소들보다 위 */
+}
